@@ -29,3 +29,7 @@ jobs:
       # Select Flutter and share the SDK version used by the app CI.
       flutter_version_file: ".fvmrc"
       allowed: "MIT,BSD-3-Clause,BSD-2-Clause,Apache-2.0"
+      # pubspec_lock_parse 2.2.0 uses the abbreviated Apache-2.0 notice.
+      # Verified in its published LICENSE; the CLI misclassifies it as unknown.
+      # Recheck this exception when upgrading the locked package version.
+      skip_packages: "pubspec_lock_parse"
