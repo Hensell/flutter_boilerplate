@@ -1,0 +1,15 @@
+name: feature
+description: A feature with domain, data, Cubit presentation, and behavior tests.
+version: 0.1.0+1
+environment:
+  mason: '>=0.1.0 <0.2.0'
+vars:
+  name:
+    type: string
+    description: Feature name in snake_case
+    prompt: What is the feature name?
+  package_name:
+    type: string
+    description: Package name from the application pubspec
+    default: flutter_boilerplate
+    prompt: What is the application package name?

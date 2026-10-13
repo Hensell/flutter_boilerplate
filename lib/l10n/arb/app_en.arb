@@ -1,0 +1,117 @@
+{
+  "@@locale": "en",
+  "counterAppBarTitle": "Counter",
+  "@counterAppBarTitle": {
+    "description": "Text shown in the AppBar of the Counter Page"
+  },
+  "aboutTitle": "About",
+  "aboutDescription": "Flutter boilerplate with BLoC, Cubit and GoRouter.",
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Label or message for settingsTitle"
+  },
+  "settingsDescription": "Choose your language and the appearance of the app.",
+  "@settingsDescription": {
+    "description": "Label or message for settingsDescription"
+  },
+  "appearanceTitle": "Appearance",
+  "@appearanceTitle": {
+    "description": "Label or message for appearanceTitle"
+  },
+  "lightTheme": "Light · white",
+  "@lightTheme": {
+    "description": "Label or message for lightTheme"
+  },
+  "darkTheme": "Dark · black",
+  "@darkTheme": {
+    "description": "Label or message for darkTheme"
+  },
+  "languageTitle": "Language",
+  "@languageTitle": {
+    "description": "Label or message for languageTitle"
+  },
+  "preferencesSaved": "Your preferences are saved on this device.",
+  "@preferencesSaved": {
+    "description": "Label or message for preferencesSaved"
+  },
+  "notesTitle": "Notes",
+  "@notesTitle": {
+    "description": "Label or message for notesTitle"
+  },
+  "notesDescription": "Save a short idea. Your notes stay on this device.",
+  "@notesDescription": {
+    "description": "Label or message for notesDescription"
+  },
+  "noteLabel": "Write a note",
+  "@noteLabel": {
+    "description": "Label or message for noteLabel"
+  },
+  "addNote": "Save note",
+  "@addNote": {
+    "description": "Label or message for addNote"
+  },
+  "deleteNote": "Delete note",
+  "@deleteNote": {
+    "description": "Label or message for deleteNote"
+  },
+  "notesEmpty": "No notes yet. Write your first idea above.",
+  "@notesEmpty": {
+    "description": "Label or message for notesEmpty"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Label or message for retry"
+  },
+  "storageError": "Storage could not be accessed. Please try again.",
+  "@storageError": {
+    "description": "Label or message for storageError"
+  },
+  "invalidDataError": "Saved notes could not be read. They have not been changed.",
+  "@invalidDataError": {
+    "description": "Label or message for invalidDataError"
+  },
+  "invalidNoteError": "Write a note between 1 and 280 characters.",
+  "@invalidNoteError": {
+    "description": "Label or message for invalidNoteError"
+  },
+  "postsTitle": "Publications",
+  "@postsTitle": {
+    "description": "Label or message for postsTitle"
+  },
+  "postsDescription": "Explore example publications loaded from an API.",
+  "@postsDescription": {
+    "description": "Label or message for postsDescription"
+  },
+  "refreshPosts": "Refresh publications",
+  "@refreshPosts": {
+    "description": "Label or message for refreshPosts"
+  },
+  "loadingPosts": "Loading publications",
+  "@loadingPosts": {
+    "description": "Label or message for loadingPosts"
+  },
+  "postsEmpty": "No publications are available.",
+  "@postsEmpty": {
+    "description": "Label or message for postsEmpty"
+  },
+  "networkError": "Could not connect. Check your connection and try again.",
+  "@networkError": {
+    "description": "Label or message for networkError"
+  },
+  "timeoutError": "The response took too long. Please try again.",
+  "@timeoutError": {
+    "description": "Label or message for timeoutError"
+  },
+  "serverError": "The server could not complete the request. Please try again.",
+  "@serverError": {
+    "description": "Label or message for serverError"
+  },
+  "invalidResponseError": "The server response could not be read.",
+  "@invalidResponseError": {
+    "description": "Label or message for invalidResponseError"
+  },
+  "unexpectedError": "Something unexpected happened. Please try again.",
+  "@unexpectedError": {
+    "description": "Label or message for unexpectedError"
+  }
+}

@@ -1,0 +1,37 @@
+name: flutter_boilerplate
+description: Flutter boilerplate with BLoC, Cubit and GoRouter.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+  flutter: ^3.47.0
+
+dependencies:
+  bloc: ^9.2.1
+  cupertino_icons: ^2.0.0
+  equatable: ^3.0.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_localizations:
+    sdk: flutter
+  go_router: ^18.0.2
+  http: ^1.6.0
+  intl: ^0.20.2
+  shared_preferences: ^2.5.6
+  uuid: ^4.6.0
+
+dev_dependencies:
+  bloc_lint: ^0.4.2
+  bloc_test: ^10.0.0
+  bloc_tools: ^0.1.0-dev.24
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.5
+  shared_preferences_platform_interface: ^2.4.2
+  very_good_analysis: ^11.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true

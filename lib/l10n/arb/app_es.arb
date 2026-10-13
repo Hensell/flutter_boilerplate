@@ -1,0 +1,117 @@
+{
+  "@@locale": "es",
+  "counterAppBarTitle": "Contador",
+  "@counterAppBarTitle": {
+    "description": "Texto mostrado en la AppBar de la página del contador"
+  },
+  "aboutTitle": "Acerca de",
+  "aboutDescription": "Base de Flutter con BLoC, Cubit y GoRouter.",
+  "settingsTitle": "Configuración",
+  "@settingsTitle": {
+    "description": "Label or message for settingsTitle"
+  },
+  "settingsDescription": "Personaliza el idioma y la apariencia de la aplicación.",
+  "@settingsDescription": {
+    "description": "Label or message for settingsDescription"
+  },
+  "appearanceTitle": "Apariencia",
+  "@appearanceTitle": {
+    "description": "Label or message for appearanceTitle"
+  },
+  "lightTheme": "Claro · blanco",
+  "@lightTheme": {
+    "description": "Label or message for lightTheme"
+  },
+  "darkTheme": "Oscuro · negro",
+  "@darkTheme": {
+    "description": "Label or message for darkTheme"
+  },
+  "languageTitle": "Idioma",
+  "@languageTitle": {
+    "description": "Label or message for languageTitle"
+  },
+  "preferencesSaved": "Tus preferencias se guardan en este dispositivo.",
+  "@preferencesSaved": {
+    "description": "Label or message for preferencesSaved"
+  },
+  "notesTitle": "Notas",
+  "@notesTitle": {
+    "description": "Label or message for notesTitle"
+  },
+  "notesDescription": "Guarda ideas breves. Tus notas permanecen en este dispositivo.",
+  "@notesDescription": {
+    "description": "Label or message for notesDescription"
+  },
+  "noteLabel": "Escribe una nota",
+  "@noteLabel": {
+    "description": "Label or message for noteLabel"
+  },
+  "addNote": "Guardar nota",
+  "@addNote": {
+    "description": "Label or message for addNote"
+  },
+  "deleteNote": "Eliminar nota",
+  "@deleteNote": {
+    "description": "Label or message for deleteNote"
+  },
+  "notesEmpty": "Todavía no hay notas. Escribe tu primera idea arriba.",
+  "@notesEmpty": {
+    "description": "Label or message for notesEmpty"
+  },
+  "retry": "Reintentar",
+  "@retry": {
+    "description": "Label or message for retry"
+  },
+  "storageError": "No se pudo acceder al almacenamiento. Inténtalo de nuevo.",
+  "@storageError": {
+    "description": "Label or message for storageError"
+  },
+  "invalidDataError": "Las notas guardadas no se pueden leer. No se han modificado.",
+  "@invalidDataError": {
+    "description": "Label or message for invalidDataError"
+  },
+  "invalidNoteError": "Escribe una nota de entre 1 y 280 caracteres.",
+  "@invalidNoteError": {
+    "description": "Label or message for invalidNoteError"
+  },
+  "postsTitle": "Publicaciones",
+  "@postsTitle": {
+    "description": "Label or message for postsTitle"
+  },
+  "postsDescription": "Explora publicaciones de ejemplo obtenidas de una API.",
+  "@postsDescription": {
+    "description": "Label or message for postsDescription"
+  },
+  "refreshPosts": "Actualizar publicaciones",
+  "@refreshPosts": {
+    "description": "Label or message for refreshPosts"
+  },
+  "loadingPosts": "Cargando publicaciones",
+  "@loadingPosts": {
+    "description": "Label or message for loadingPosts"
+  },
+  "postsEmpty": "No hay publicaciones disponibles.",
+  "@postsEmpty": {
+    "description": "Label or message for postsEmpty"
+  },
+  "networkError": "No se pudo conectar. Comprueba tu conexión e inténtalo de nuevo.",
+  "@networkError": {
+    "description": "Label or message for networkError"
+  },
+  "timeoutError": "La respuesta tardó demasiado. Inténtalo de nuevo.",
+  "@timeoutError": {
+    "description": "Label or message for timeoutError"
+  },
+  "serverError": "El servidor no pudo completar la solicitud. Inténtalo de nuevo.",
+  "@serverError": {
+    "description": "Label or message for serverError"
+  },
+  "invalidResponseError": "La respuesta del servidor no se puede leer.",
+  "@invalidResponseError": {
+    "description": "Label or message for invalidResponseError"
+  },
+  "unexpectedError": "Ocurrió un error inesperado. Inténtalo de nuevo.",
+  "@unexpectedError": {
+    "description": "Label or message for unexpectedError"
+  }
+}

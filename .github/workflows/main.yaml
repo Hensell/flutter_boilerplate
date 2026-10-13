@@ -1,0 +1,41 @@
+name: flutter_boilerplate
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  semantic-pull-request:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1
+
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_version_file: ".fvmrc"
+      min_coverage: 100
+      collect_coverage_from: all
+      # Generated translations and declaration-only contracts have no executable logic.
+      coverage_excludes: >-
+        lib/l10n/gen/**
+        lib/core/storage/local_store.dart
+        lib/features/**/domain/repositories/*_repository.dart
+        lib/core/logging/error_reporter.dart
+      run_bloc_lint: true
+      setup: |
+        dart pub global activate mason_cli 0.1.4
+        ./tool/check_feature_template.sh
+
+  spell-check:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/spell_check.yml@v1
+    with:
+      includes: |
+        **/*.md
+      modified_files_only: false
