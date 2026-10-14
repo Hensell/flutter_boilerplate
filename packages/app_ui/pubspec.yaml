@@ -1,0 +1,14 @@
+name: app_ui
+description: Reusable monochrome design system by Hensell.
+version: 1.0.0
+publish_to: none
+environment:
+  sdk: ^3.13.0
+  flutter: ^3.47.0
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^10.0.0

@@ -4,7 +4,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 template_check_dir=$(mktemp -d)
 trap 'rm -rf "$template_check_dir"' EXIT
-cp -R lib test tool bricks mason.yaml pubspec.yaml pubspec.lock analysis_options.yaml \
+cp -R lib test tool bricks packages mason.yaml pubspec.yaml pubspec.lock analysis_options.yaml \
   l10n.yaml .fvmrc "$template_check_dir/"
 cd "$template_check_dir"
 flutter_command=(flutter)

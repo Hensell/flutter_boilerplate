@@ -19,3 +19,9 @@ coverage_excludes="lib/l10n/gen/** lib/core/storage/local_store.dart lib/feature
   --show-uncovered \
   --test-randomize-ordering-seed random \
   "$@"
+
+# Enforce the same coverage threshold for the independent design system.
+(cd packages/app_ui && "${dart_command[@]}" pub global run very_good_cli:very_good test \
+  --coverage --collect-coverage-from all --min-coverage 100 --show-uncovered \
+  --exclude-coverage "lib/app_ui.dart lib/src/tokens/**" \
+  --test-randomize-ordering-seed random)

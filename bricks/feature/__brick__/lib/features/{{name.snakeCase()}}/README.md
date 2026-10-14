@@ -10,3 +10,6 @@ use cases when an operation has business rules instead of simple method forwardi
 
 Move the generated heading and empty-state message into the app localization files
 when defining the final feature copy. Tests cover the repository and page behavior.
+
+Use `app_ui` for visual tokens and shared controls. Keep feature-specific
+components in `presentation/widgets`; pass values and callbacks to them.

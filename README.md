@@ -48,7 +48,7 @@ lib/
   app/
     di/                 # Composition root
     router/             # Navigation
-    theme/              # Monochrome Material themes
+    theme/              # Compatibility export of the shared UI themes
     view/               # Providers and application-wide preferences
   core/
     config/             # Immutable environment configuration
@@ -69,6 +69,7 @@ lib/
       presentation/
         cubit/
         views/
+        widgets/        # Feature-specific composition
     settings/
       domain/
       data/
@@ -80,6 +81,13 @@ lib/
     counter/            # Simple Cubit example
     about/
   l10n/
+packages/
+  app_ui/
+    lib/src/
+      tokens/           # Colors, spacing, and responsive widths
+      theme/            # Light/dark themes and Material styling
+      widgets/          # Reusable controls and semantic typography
+    test/
 ```
 
 Notes follows `View → Cubit → AddNote → NotesRepository → DataSource`.
@@ -136,12 +144,6 @@ concurrent mutations, navigation, Cubit closure, HTTP deadlines and failures,
 and global error reporting with fallback handling. Widget tests cover language
 and theme changes, preference restoration, notes operations, and six screen
 sizes with enlarged text and keyboard space.
-
-Latest validated baseline: **67 passing app tests**, **581/581 executable lines
-covered across 42 files**, and **70 passing tests** when the generated feature is
-included. Formatting, both linters, and the development web build passed.
-These counts describe the current baseline; rerun the commands after changes.
-Native builds have not been validated.
 
 Edit translations in `lib/l10n/arb/`, then regenerate them:
 
@@ -231,3 +233,21 @@ Flutter starter, using Very Good Analysis, Bloc Lint, and Very Good Workflows.
 Released under the [MIT License](LICENSE). You may use, modify, distribute,
 and sell this software, including in commercial projects, while retaining the
 copyright and license notice. The software is provided without warranty.
+
+## Design system
+
+[App UI](packages/app_ui/README.md) is an independent local Flutter package.
+Features use its tokens, typography, themes, and shared controls. Components
+specific to a feature live in `presentation/widgets`, including `NoteTile`,
+`PostCard`, `SettingsChoices`, and `CounterText`. Pages and views own state
+connections and compose those components. Layout primitives may be composed
+locally; visual values and reusable control styling belong in `app_ui`.
+
+The design system has no dependency on Cubits, repositories, routes, app
+localization, or domain models. It accepts strings, values, and callbacks.
+Mason generates features using this package and a separate item widget.
+
+`./tool/test.sh` checks the app and design system independently at 100% line
+coverage. CI has a dedicated `app-ui` job using the same pinned Flutter SDK.
+For that package, only barrel exports and compile-time token declarations are
+excluded from coverage; all executable widget and theme code remains included.

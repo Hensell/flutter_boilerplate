@@ -39,3 +39,13 @@ jobs:
       includes: |
         **/*.md
       modified_files_only: false
+
+  app-ui:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      working_directory: packages/app_ui
+      flutter_version_file: ".fvmrc"
+      min_coverage: 100
+      collect_coverage_from: all
+      # Barrel exports and compile-time constants contain no executable logic.
+      coverage_excludes: "lib/app_ui.dart lib/src/tokens/**"
