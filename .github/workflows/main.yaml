@@ -17,7 +17,7 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1
 
   build:
-    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v2
     with:
       flutter_version_file: ".fvmrc"
       min_coverage: 100
@@ -41,7 +41,7 @@ jobs:
       modified_files_only: false
 
   app-ui:
-    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v2
     with:
       working_directory: packages/app_ui
       flutter_version_file: ".fvmrc"
